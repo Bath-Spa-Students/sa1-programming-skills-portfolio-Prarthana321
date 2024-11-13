@@ -1,7 +1,9 @@
 # Basic requirements: Single question about the capital of France.
 print("Basic")
 print("---------------------------")
+#Code for asking the input from the user.
 answer = input("What is the capital of France? ").strip()
+#Code for checking whether the answer is correct.
 if answer.lower() == "paris":
     print("Correct! The answer is Paris.")
 else:
@@ -10,6 +12,7 @@ else:
 # Advanced requirements: Quiz with multiple questions
 print("advanced ")
 print("---------------------------")
+#Code for Quiz of 10 european countries.
 questions = {
     "France": "Paris",
     "Germany": "Berlin",
@@ -22,9 +25,9 @@ questions = {
     "Norway": "Oslo",
     "Denmark": "Copenhagen"
 }
-    
+#Code for initializing the score.  
 score = 0
-    
+#Code for checking the answer regardless of capitalization.
 for country, capital in questions.items():
     answer = input(f"What is the capital of {country}? ").strip()
     if answer.lower() == capital.lower():

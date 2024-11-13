@@ -1,33 +1,39 @@
-dict_months={
-    1:31, #Month=January.
-    2:28, #Month=February.
-    3:31, #Month=March.
-    4:30, #Month=April.
-    5:31, #Month=May.
-    6:30, #Month=June.
-    7:31, #Month=July.
-    8:31, #Month=August.
-    9:30, #Month=September.
-    10:31, #Month=October.
-    11:30, #Month=November.
-    12:31 #Month=December.
-    }
-#Code to ask the user to input the month number.
-user_input=int(input("Enter the month number:"))
-#Code to check whether the input is valid.
-if user_input in dict_months:
-    #Advanced Requirement(To ask the user whether february is leap year.)
-    if dict_months==2:
-        leap_year=input("Is february leap year? Answer in yes or no:")
-        #Code to adjust february as leap year.
-        if leap_year=="yes":
-            print("The number of days in February (leap year) is 29.")
+# Code to define the days in each month (default for non-leap years)
+days_in_month = {
+    1: 30,   #Month=January
+    2: 28,   #Month=February
+    3: 31,   #Month=March
+    4: 30,   #Month=April
+    5: 31,   #Month=May
+    6: 30,   #Month=June
+    7: 31,   #Month=July
+    8: 31,   #Month=August
+    9: 30,   #Month=September
+    10: 31,  #Month=October
+    11: 30,  #Month=November
+    12: 31   #Month=December
+}
+
+# Function to get the number of days in a specific month
+try:
+    # Asking the user to input the month number
+    month = int(input("Enter the month number (1-12): "))
+    
+    # Validating the month number
+    if month < 1 or month > 12:
+        print("Invalid month number. Please enter a number between 1 and 12.")
+        exit()
+    # Checking if the month is February and handle leap year
+    if month == 2:
+        # Asking if it's a leap year
+        leap_year = input("Is it a leap year? (yes or no): ").strip().lower()
+        if leap_year == "yes":
+            print("February has 29 days in a leap year.")
         else:
-            print("The number of days in February is 28")
+            print("February has 28 days in a non-leap year.")
     else:
-        print(f"The number of days in month {user_input} is {dict_months[user_input]}")
-else:
-    print(f"Invalid number.Enter number between 1-12.")
+        # Code to output the number of days for the selected month
+        print(f"The month {month} has {days_in_month[month]} days.")
 
-
-
+except ValueError:
+    print("Invalid input. Please enter a number.")

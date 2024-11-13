@@ -113,7 +113,6 @@ Write a program that tells a user how many days there are in a specific month. U
 ### Advanced Requirement:
 Leap Year Adjustment: Modify the program to account for leap years. For February, ask the user if the year is a leap year and adjust the number of days accordingly.
 
-
 ____________________________________________________________________________________
 
 ## Exercise 6: Brute Force Attack - 30 Marks
