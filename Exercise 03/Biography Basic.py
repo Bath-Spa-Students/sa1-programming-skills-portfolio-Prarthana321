@@ -1,4 +1,4 @@
- #This is the code for inputing information in a dictionary
+#This is the code for inputing information in a dictionary
 my_information= {"name":"Zeeshan","hometown":"Jamshedpur","age": 22}
 
 #This is a code for priningt the dictionary.
