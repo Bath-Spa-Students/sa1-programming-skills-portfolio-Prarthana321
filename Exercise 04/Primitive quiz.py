@@ -1,4 +1,4 @@
-# Basic requirements: Single question about the capital of France.
+ # Basic requirements: Single question about the capital of France.
 print("Basic")
 print("---------------------------")
 #Code for asking the input from the user.
