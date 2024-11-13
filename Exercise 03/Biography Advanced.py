@@ -2,7 +2,7 @@
 user_firstname=str(input("Enter your first name: "))
 
 #Code to input user's second name.
-user_secondname=str(input("Enter your second name: ")) 
+user_secondname=str(input("Enter your second name: "))
 
 #Code to input user's hometown.
 user_hometown=str(input("Enter your hometown: "))
