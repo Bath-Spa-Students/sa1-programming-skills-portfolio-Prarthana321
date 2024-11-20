@@ -7,7 +7,7 @@ max_attempts=5
 #Code to initialize the attempt counter to 0.
 attempts_counter=0
 
-#Code to start the loop to ask for the password.
+#Code to start the loop to ask for the password. 
 while attempts_counter<max_attempts:
     enter_password=(int(input("Enter the password:"))) #Asking the user to input the password.
     #Code to check whether the entered password is correct.

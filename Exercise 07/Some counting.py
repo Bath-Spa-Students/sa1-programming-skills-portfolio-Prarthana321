@@ -10,7 +10,7 @@ for i in range (50,-1,-1):
     print(i, end=" ")
 print("\n")
 
-#Code for loop that counts up from 30 - 50 in increments of 1.
+#Code for loop that counts up from 30 - 50 in increments of 1. 
 print("Counting up from 30 - 50 in increments of 1:")
 for i in range(30,51,1):
     print(i, end=" ")
